@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>Hello PSGI!</title>
+<body>
+: if $msg == nil {
+<form method="GET" action="/">
+<h2>GET</h2>
+<input type="text" name="msg" /><input type="submit" />
+</form>
+<form method="POST" action="/">
+<h2>POST</h2>
+<input type="text" name="msg" /><input type="submit" />
+</form>
+: } else {
+<p><: $msg :></p>
+: }
